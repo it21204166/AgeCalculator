@@ -56,7 +56,17 @@ class MainActivity : AppCompatActivity() {
 
             val trueSecond = todayInSecond - second
 
+            var inSecondTV:TextView=findViewById(R.id.second_TV)
+            inSecondTV.text= "$trueSecond S"
 
+            var inMinute:TextView = findViewById(R.id.minute_TV)
+            inMinute.text="${trueSecond/60} M"
+
+            var inhour:TextView = findViewById(R.id.hour_TV)
+            inhour.text="${trueSecond/3600} H"
+
+            var inDay:TextView = findViewById(R.id.days_TV)
+            inDay.text="${trueSecond/86400} D"
 
 
 
