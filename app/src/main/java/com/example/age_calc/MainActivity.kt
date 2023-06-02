@@ -40,7 +40,30 @@ class MainActivity : AppCompatActivity() {
 
 
 
+        val dpd=DatePickerDialog(this,DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
+            Toast.makeText(this,"$DayOfMonth/${Month+1}/$Year",Toast.LENGTH_SHORT).show()
 
+            val selectedDate = "$dayOfMonth/${month+1}/$year"
+            val bday_date_TV:TextView = findViewById(R.id.bday_date_TV)
+            bday_date_TV.text = selectedDate
+
+            val simpleDate =SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
+            val date=simpleDate.parse(selectedDate)
+
+            val second = date!!.time/1000
+
+            val todayInSecond = simpleDate.parse(simpleDate.format(System.currentTimeMillis()))!!.time/1000
+
+            val trueSecond = todayInSecond - second
+
+
+
+
+
+        },Year,Month,DayOfMonth)
+
+        dpd.datePicker.setMaxDate(Date().time-86400000)
+        dpd.show()
     }
 
 }
