@@ -24,13 +24,23 @@ class MainActivity : AppCompatActivity() {
 
         bday_Btn.setOnClickListener { view ->
 
-            datePicker()
+            datePicker(view)
             Toast.makeText(this@MainActivity,
                 "Age Calander",Toast.LENGTH_SHORT).show()
              }
 
         }
 
+    fun datePicker(view: View){
 
+        val calender = Calendar.getInstance()
+        val Year = calender.get(Calendar.YEAR)
+        val Month = calender.get(Calendar.MONTH)
+        val DayOfMonth = calender.get(Calendar.DAY_OF_MONTH)
+
+
+
+
+    }
 
 }
