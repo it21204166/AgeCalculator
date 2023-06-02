@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="337dp"
+        android:layout_height="105dp"
+        android:src="@mipmap/abs" />
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Calculate Age"
+        android:textColor="#8420C3"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ageTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="_Your AGE_"
+        android:textAlignment="center"
+        android:textColor="#FF8420C3"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/bday_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="#FF8420C3"
+        android:text="Select Age"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/bday_date_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF8420C3"
+        android:text="1/1/2000"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Date"
+        android:textAlignment="center"
+        android:textColor="#FF8420C3"
+        />
+
+    <TextView
+        android:id="@+id/second_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="20dp"
+        android:background="#FF8420C3"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="3dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In Second"
+        android:textAlignment="center"
+        android:textColor="#FF8420C3"/>
+
+    <TextView
+        android:id="@+id/minute_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="20dp"
+        android:background="#FF8420C3"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In Minute"
+        android:textAlignment="center"
+        android:textColor="#FF8420C3"/>
+
+    <TextView
+        android:id="@+id/hour_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="20dp"
+        android:background="#FF8420C3"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In Hour"
+        android:textAlignment="center"
+        android:textColor="#FF8420C3"/>
+
+    <TextView
+        android:id="@+id/days_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="20dp"
+        android:background="#FF8420C3"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In Days"
+        android:textAlignment="center"
+        android:textColor="#FF8420C3"/>
+
+
+
+</LinearLayout>
